@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="870.0" prefWidth="1470.0" style="-fx-background-color: #ecf0f1;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="library.SearchBookController">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#40a8c4" height="35.0" layoutY="835.0" stroke="BLACK" strokeType="INSIDE" width="1470.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#40a8c4" height="35.0" stroke="BLACK" strokeType="INSIDE" width="1470.0" />
+      <Label layoutX="34.0" layoutY="168.0" text="SEARCH FOR BOOK">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="Tsearch" focusColor="#07689f" labelFloat="true" layoutX="34.0" layoutY="273.0" prefHeight="62.0" prefWidth="676.0" promptText="Title of the Book" unFocusColor="#07689f" />
+      <JFXButton fx:id="Bclear" buttonType="RAISED" layoutX="34.0" layoutY="481.0" onAction="#ButtonClearClickedSearch" prefHeight="62.0" prefWidth="676.0" style="-fx-background-color: #40a8c4; -fx-background-radius: 25;" text="CLEAR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="Bsearch" buttonType="RAISED" layoutX="34.0" layoutY="386.0" onAction="#ButtonSearchClicked" prefHeight="62.0" prefWidth="676.0" style="-fx-background-color: #40a8c4; -fx-background-radius: 25;" text="SEARCH" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="Bback" buttonType="RAISED" layoutX="34.0" layoutY="573.0" onAction="#ButtonBackClickedSearch" prefHeight="62.0" prefWidth="676.0" style="-fx-background-color: #40a8c4; -fx-background-radius: 25;" text="BACK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="73.0" fitWidth="100.0" layoutX="506.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/DesignImages/magnifier.png" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="TAresults" layoutX="735.0" layoutY="26.0" prefHeight="812.0" prefWidth="709.0" />
+   </children>
+</AnchorPane>

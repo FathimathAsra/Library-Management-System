@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="583.0" prefWidth="922.0" style="-fx-background-color: #40a8c4;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="library.MianMenuController">
+    
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="545.0" layoutX="18.0" layoutY="18.0" stroke="BLACK" strokeType="INSIDE" width="887.0" />
+      <Label layoutX="100.0" layoutY="74.0" prefHeight="57.0" prefWidth="594.0" text="Library Management System">
+         <font>
+            <Font name="SansSerif Bold" size="40.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="Bsearch" buttonType="RAISED" layoutX="50.0" layoutY="190.0" onAction="#BsearchBookClicked" prefHeight="100.0" prefWidth="820.0" style="-fx-background-color: #40a8c4; -fx-background-radius: 15;" text="Search for book" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="Baddbook" buttonType="RAISED" layoutX="50.0" layoutY="314.0" onAction="#BaddnewbookClicked" prefHeight="100.0" prefWidth="400.0" style="-fx-background-color: #40a8c4; -fx-background-radius: 15;" text="Add new book" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="Bborrowbook" buttonType="RAISED" layoutX="472.0" layoutY="314.0" onAction="#BorrowABookClicked" prefHeight="100.0" prefWidth="400.0" style="-fx-background-color: #40a8c4; -fx-background-radius: 15;" text="Borrow a book" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="Bremovebook" buttonType="RAISED" layoutX="50.0" layoutY="431.0" onAction="#BremoveBookClicked" prefHeight="100.0" prefWidth="400.0" style="-fx-background-color: #40a8c4; -fx-background-radius: 15;" text="Remove a book" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="Baboutdev1" buttonType="RAISED" layoutX="472.0" layoutY="431.0" onAction="#LogoutClicked" prefHeight="100.0" prefWidth="400.0" style="-fx-background-color: #40a8c4; -fx-background-radius: 15;" text="Log out" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="114.0" fitWidth="122.0" layoutX="660.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/DesignImages/books_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="48.0" layoutX="118.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/DesignImages/magnifier.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="67.0" layoutX="107.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/DesignImages/open-book.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="69.0" layoutX="100.0" layoutY="453.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/DesignImages/delete.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="67.0" layoutX="525.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/DesignImages/book.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="57.0" layoutX="525.0" layoutY="453.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/DesignImages/enter.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
